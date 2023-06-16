@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+  --color-primary: #FD5A02;
+  --color-light:#FFFFFF;
+  --color-dark:#2F4858;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+  background-image: linear-gradient(to right bottom, #fd5a02, #f16200, #e56800, #da6d00, #cf7100, #ba7800, #a57c00, #917f00, #6f811c, #4e8034, #2d7c4a, #00775c);
+}
+
+
+.master-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.main-container{
+  position: absolute;
+  width: 80%;
+  max-width: 1080px;
+  height: 720px;
+  background-color: var(--color-light);
+  border-color: transparent ;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, .4);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.top-section {
+  width: 80%;
+  margin: 10px auto;
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  border-radius: 4px;
+  z-index: 100;
+}
+.top-section img {
+  justify-self: flex-start;
+}
+.top-section h1 {
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--color-light);
+  outline: 1px var(--color-dark);
+  text-align: center;
+  justify-self: flex-end;
+}
+
+.top-section h1 span {
+  color: var(--color-dark);
+}
+
+.bottom-section{
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  height: calc(100% - 40px - 128px);
+  background-color: var(--color-dark);
+  border-radius: 4px;
+}
+
+.up-btn, .down-btn {
+  position: absolute;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.up-btn:hover, .down-btn:hover {
+  background-color: #fa752e;
+  transition: .2s;
+}
+
+.up-btn:disabled, .down-btn:disabled {
+  background-color: #96969686;
+  cursor: not-allowed;
+}
+
+.up-btn {
+  top: 0;
+  right: 0;
+}
+
+.down-btn{
+  bottom: 0;
+  right: 0;
+}
+
+.sep {
+  height: 90%;
+  width: 5px;
+  background: var(--color-primary);
+  border-radius: 10px;
+}
