@@ -472,6 +472,7 @@ header h1 span::after {
     padding-top: 22px;
     display: flex;
     flex-direction: column;
+    padding-left: 2.5em;
     height: 100vh;
 }
 
