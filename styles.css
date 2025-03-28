@@ -706,6 +706,12 @@ footer .social-links li a img {
         width: 350px;
         margin-top: 12px;
     }
+
+
+    footer .social-links li {
+        width: 50px;
+        height: 50px;
+    }
     
 }
 
